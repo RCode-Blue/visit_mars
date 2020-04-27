@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-template-rows: [banner-top]
+    calc(100vh - 10rem) [banner-bottom feature-top] 
+    50rem [feature-bottom]
+    repeat(5, [section] 60vw) [footer-top] 
+    10rem [footer-bottom grid-bottom];
+  // grid-template-columns: [max-left] 1fr [max-right] ;
+}

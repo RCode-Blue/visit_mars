@@ -1,0 +1,126 @@
+.row {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #D9D9D9;
+  font-weight: 300;
+  line-height: 1.6; }
+
+.navi {
+  display: flex;
+  flex-direction: row; }
+
+.container {
+  display: grid;
+  grid-template-rows: [banner-top] calc(100vh - 10rem) [banner-bottom feature-top] 50rem [feature-bottom] repeat(5, [section] 60vw) [footer-top] 10rem [footer-bottom grid-bottom]; }
+
+.banner {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 60%, black 100%), url(../../img/hero/Mars.jpg);
+  background-size: cover;
+  background-position: cover;
+  background-attachment: fixed; }
+  .banner__text {
+    color: #F0E7E7;
+    grid-area: 2/2/2/6; }
+    .banner__text__title {
+      font-size: 8rem; }
+    .banner__text__slogan {
+      font-size: 3rem;
+      transform: translateX(5rem); }
+    .banner__text__blurb {
+      font-size: 1.8rem;
+      transform: translateY(15rem); }
+      .banner__text__blurb p {
+        padding: 1rem 0; }
+
+.contact {
+  background-color: plum; }
+
+.feature {
+  background-color: #FAF2CA; }
+  .feature__wrapper {
+    max-width: 120rem;
+    height: 40rem;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 25rem);
+    grid-gap: 3rem;
+    justify-content: space-around; }
+    .feature__wrapper__box {
+      display: flex;
+      flex-direction: column; }
+      .feature__wrapper__box__top {
+        flex-grow: 3;
+        border: 1px solid #D9D9D9;
+        border-radius: 5px 5px 0 0;
+        background-color: #FFFFFF;
+        text-align: center;
+        padding: auto;
+        align-content: center; }
+      .feature__wrapper__box__bottom {
+        flex-grow: 4;
+        border: 1px solid #D9D9D9;
+        border-radius: 0 0 5px 5px;
+        background-color: #FFFDF0; }
+
+.footer {
+  background-color: slategray; }
+
+.gallery {
+  background-color: royalblue;
+  color: white; }
+
+.launch {
+  background-color: cadetblue; }
+
+.navi {
+  background-color: #2B2A23; }
+  .navi__logo-lg {
+    flex: 0 0 10rem;
+    justify-self: center;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem 2rem; }
+  .navi__menu {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 2rem;
+    color: #F0E7E7; }
+    .navi__menu li {
+      flex: 0 1 18rem;
+      align-self: center;
+      align-content: center;
+      list-style: none;
+      display: inline-block;
+      text-align: center; }
+    .navi__menu li a:link,
+    .navi__menu li a:visited {
+      color: #E3E3E3;
+      text-decoration: none; }
+
+.visit {
+  background-color: slateblue;
+  color: white; }
+
+.works {
+  background-color: khaki; }
