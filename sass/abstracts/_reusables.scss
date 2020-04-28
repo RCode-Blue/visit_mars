@@ -1,5 +1,94 @@
 // ----- REUSABLE CODE -----
-.row {
-  max-width: $inner-width;
-  margin: 0 auto;
+// .row {
+//   max-width: $inner-width;
+//   margin: 0 auto;
+// }
+
+// --- BOX - Feature section ---
+.box {
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    flex-grow: .8;
+    
+    border: 1px solid $color-grey-2;
+    border-radius: 5px 5px 0 0;
+    background-color: $color-white;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__bottom {
+    flex-grow: 3;
+
+    border: 1px solid $color-grey-2;
+    border-radius: 0 0 5px 5px;
+    background-color: $color-yellow-1;
+    color: $color-grey-3;
+    // display: flex;
+    // flex-direction: column;
+
+    &__title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 400;
+
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      
+    }
+
+    &__text {
+      font-size: 1.5rem;
+      margin: 0 1rem;
+    }
+  }
+
 }
+
+
+// --- WORKS-BOX - How it Works Section ---
+.works-box {
+  display: grid;
+  grid-template-columns: 10rem 30rem;
+  grid-template-rows: 10rem;
+
+  margin: 2rem 0;
+
+  border: 1px solid $color-yellow-3;
+  color: $color-yellow-3;
+
+  font-size: 3rem;
+
+  i {
+    margin: auto;
+    font-size: 4rem;
+  }
+
+  &__text {
+    display: flex;
+    // text-align: center;
+    // flex-direction: row;
+      div {
+        flex: 0 0 5rem;
+        
+        margin: auto;
+
+        text-align: center;
+        }
+
+      p {
+        flex: 1 0 80rem;
+
+        margin: auto 0;
+        margin-left: 5rem;
+      }
+  }
+
+
+}
+
