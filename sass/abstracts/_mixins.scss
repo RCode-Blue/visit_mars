@@ -1,0 +1,108 @@
+
+// GENERAL MIXINS
+// --------------
+// Centre-aligns a wrapper div
+@mixin inner-div-txt {
+  width: $inner-width;
+  margin: 0 auto;
+
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin section-title {
+  height: $section-title-height;
+  font-size: $font-secondary-title-size;
+  padding: $section-title-padding;
+}
+
+
+// FOUR-BOXES MIXINS:
+// -----------------
+// Section layout
+@mixin four-boxes-section {
+  grid-column: far-left / far-right;
+
+  display: grid;
+  grid-template-columns: 1fr minmax(30rem, 70vw) 1fr;
+}
+
+// Outer wrap layout
+@mixin four-boxes-wrap {
+  margin: $fourboxes-wrap-margin-y $fourboxes-wrap-margin-x;
+  grid-column: 2/3;
+
+  background-color: $color-yellow-2;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+
+// TEXT-IMAGE BOX MIXINS:
+// ---------------------
+@mixin txt-img-box {
+  width: 100%;
+  padding: 0 2rem;
+  height: $txtimg-rowheight;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__txt {
+    flex: 1 1 50%;
+    min-width: 20rem;
+    padding: 5rem;
+
+    &__title {
+      font-size: $font-tertiary-title-size;
+      text-align: center;
+      font-weight: 300;
+      margin-bottom: 3rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__img {
+    flex: 1 1 50%;
+    max-height: 45rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+
+// #region  -- OLD STUFF --
+
+// Wrapper div for 4 boxes
+// @mixin four-boxes {
+//   max-width: $inner-width;
+//   height: 40rem;
+//   margin: 5rem auto;
+
+//   display: grid;
+//   grid-template-columns: repeat(4, 25rem);
+//   grid-gap: 3rem;
+//   justify-content: space-around;
+// }
+
+
+// // Center a child div using flex
+// @mixin center-flex {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   flex-direction: column;
+// }
+// #endregion

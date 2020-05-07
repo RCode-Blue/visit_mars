@@ -1,16 +1,13 @@
 .feature {
-  background-color: $color-yellow-2;
+  @include four-boxes-section;
+  grid-row: feature-top / feature-bottom;
 
-  &__wrapper {
-    max-width: $inner-width;
-    height: 40rem;
-    margin: 5rem auto;
-
-    display: grid;
-    grid-template-columns: repeat(4, 25rem);
-    grid-gap: 3rem;
-    justify-content: space-around;
-    
+  &__wrap {
+    @include four-boxes-wrap;
   }
-
 }
+
+.feat-card {
+  height: 40rem;
+}
+

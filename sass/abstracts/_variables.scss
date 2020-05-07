@@ -17,7 +17,32 @@ $color-black: #000000;
 // FONTS
 $font-primary: 'Lato', sans-serif;
 
+$font-secondary-title-size: 4rem;
+$font-tertiary-title-size:  3rem;
 
 
 // DIMENSIONS
-$inner-width: 120rem;
+// ----------
+// Grid: Full-screen dimensions
+$section-title-height: auto;
+$section-title-padding: 4rem;
+$full-width: 120rem;
+$inner-width: 114rem;
+
+// FourBoxes: Full-screen dimensions
+$fourboxes-wrap-margin-y: 2rem;
+$fourboxes-wrap-margin-x: auto;
+
+
+// HowItWorks Section: Full-screen dimensions:
+$works-row-height: auto;
+// $works-row-height: 11rem; // Should be same size as smallsquare-size
+$works-smallsquare-size: 11rem;
+
+// Text-Image box dimenstions:
+// $txtimg-rowheight: 35rem; // Text-Image frame row height
+$txtimg-rowheight: 3auto; // Text-Image frame row height
+$txtimg-txt-minw: 20rem;  // Text box minimum width
+$txtimg-img_minw: 20rem;  // Image box minimum width
+$txtimg-img_minh: 25rem;  // Image box minimum height
+

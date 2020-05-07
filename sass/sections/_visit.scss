@@ -1,4 +1,30 @@
-.visit {
-  background-color: slateblue;
-  color: white;
+.visit-title {
+  grid-column: far-left / far-right;
+  grid-row: visit-title-top / visit-title-bottom;
+
+  @include section-title;
+  background-color: $color-brown-3;
+
+  h2 {
+    text-align: center;
+    
+    font-size: $font-secondary-title-size;
+    font-weight: 300;
+  }
 }
+
+.visit {
+  grid-column: far-left / far-right;
+  grid-row: visit-top / visit-bottom;
+  background-color: $color-brown-3;
+}
+
+.visit-frame {
+  @include txt-img-box;
+}
+
+.visit-frame-rx {
+  @include txt-img-box;
+  flex-direction: row-reverse;
+}
+

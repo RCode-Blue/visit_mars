@@ -10,6 +10,7 @@
   <title>Mars Tourism</title>
 </head>
 <body>
+  
   <nav class="navi">
     <img src="../img/logo/logo-white-l.png" class="navi__logo-lg"></img>
     <ul class="navi__menu">
@@ -20,131 +21,338 @@
   </nav>
 
   <div class="container">
+    <!-- Banner -->
     <div class="banner">
-      <div class="banner__text">
-        <div class="banner__text__title">
-          Welcome to Mars
-        </div>
-        <div class="banner__text__slogan">
-          Embark on a trip that's truly out of this world
-        </div>
-        <div class="banner__text__blurb">
-          <p>
-          The red planet beckons. See sights you've never seen before. 
-          </p>
-          <p>
-          Enjoy the view from 72,000 feet up atop Olympus Mons, or travel the 4,000 km length of Valles Marineris. You can visit the polar ice caps of the Planum Boreum or gase upon the dormant volcanoes of Tharsis. Or you can visit the historical Curiosity Rover landing site at Gale Crater.
-          </p>
-        </div>
+      <div class="banner__title">
+        Welcome to Mars
+      </div>
+      <div class="banner__slogan">
+        Embark on a trip that's truly out of this world
+      </div>
+      <div class="banner__blurb">
+        <p>
+        The red planet beckons. See sights you've never seen before. 
+        </p>
+        <p>
+        Enjoy the view from 72,000 feet up atop Olympus Mons, or travel the 4,000 km length of Valles Marineris. You can visit the polar ice caps of the Planum Boreum or gase upon the dormant volcanoes of Tharsis. Or you can visit the historical Curiosity Rover landing site at Gale Crater.
+        </p>
       </div>
     </div>
 
+    <!-- Feature -->
     <div class="feature">
-      <div class="feature__wrapper">
-        <div class="box">
-          <div class="box__top">
+      <div class="feature__wrap">
+        <div class="box feat-card">
+          <div class="box__feat-top">
             <img src="./img/icons/Rocket.png" alt="Rocket"></img>
           </div>
-          <div class="box__bottom">
-            <p class="box__bottom__title">
+          <div class="box__feat-bottom">
+            <p class="box__feat-bottom__title">
               4 Launch Sites
             </p>
-            <p class="box__bottom__text">
+            <p class="box__feat-bottom__text">
               With four launch sites on Earth, we are well prepated for any adverse weather or geopolitical events. Rest assured there will be no delays to your flight
             </p>
           </div>
         </div>
-        <div class="box">
-          <div class="box__top">
+        <div class="box feat-card">
+          <div class="box__feat-top">
             <img src="./img/icons/Astronaut.png" alt="Astronaut"></img>
           </div>
-          <div class="box__bottom">
-            <p class="box__bottom__title">
+          <div class="box__feat-bottom">
+            <p class="box__feat-bottom__title">
               No-Fuss Medicals
             </p>
-            <p class="box__bottom__text">
+            <p class="box__feat-bottom__text">
               There are over 2,000. medical practices around the globe registered with us. There's sure to be one near you.
             </p>
           </div>
         </div>
-        <div class="box">
-          <div class="box__top">
+        <div class="box feat-card">
+          <div class="box__feat-top">
             <img src="./img/icons/Capsule.png" alt="Capsule"></img>
           </div>
-          <div class="box__bottom">
-            <p class="box__bottom__title">
+          <div class="box__feat-bottom">
+            <p class="box__feat-bottom__title">
               Feel at Home
             </p>
-            <p class="box__bottom__text">
+            <p class="box__feat-bottom__text">
               Our capsules are made from durable yet comfortable space-age materials. You will be comfortably ensconced in our bio-chambers for the duration of the flight.
             </p>
           </div>
         </div>
-        <div class="box">
-          <div class="box__top">
+        <div class="box feat-card">
+          <div class="box__feat-top">
             <img src="./img/icons/Telescope.png" alt="Telescope"></img>
           </div>
-          <div class="box__bottom">
-            <p class="box__bottom__title">
+          <div class="box__feat-bottom">
+            <p class="box__feat-bottom__title">
               Exciting Destinations
             </p>
-            <p class="box__bottom__text">
+            <p class="box__feat-bottom__text">
               See the breathtaking sights of the red planet. Visit historical sites while you get away from it all.
             </p>
           </div>
-        </div>
+        </div> 
+
       </div>
     </div>
-
+    
     <!-- How it works -->
     <div class="works">
+      <div class="works__title">
+        How it Works
+      </div>
       <div class="works__wrap">
-        <div class="works__wrap__title">
-          How it Works
+        <div class="worksbox">
+          <!-- step 1 -->
+          <div class="worksbox__row">
+            <div class="worksbox__row__icon">
+              <i class="fa fa-stethoscope" aria-hidden="true"></i>
+            </div>
+            <div class="worksbox__row__bullet">
+              <div class="worksbox__row__bullet__box">
+                <p>1</p>
+              </div>
+            </div>
+            <div class="worksbox__row__text">
+              <p>Get a medical check from one of our registered providers</p>
+            </div>          
+          </div>
+          <!-- step 2 -->
+          <div class="worksbox__row">
+            <div class="worksbox__row__icon">
+              <i class="fa fa-plane" aria-hidden="true"></i>
+            </div>
+            <div class="worksbox__row__bullet">
+              <div class="worksbox__row__bullet__box">
+                <p>2</p>
+              </div>
+            </div>
+            <div class="worksbox__row__text">
+              <p>Fly to one of our launch sites at the scheduled time</p>
+            </div>          
+          </div>
+          <!-- step 3 -->
+          <div class="worksbox__row">
+            <div class="worksbox__row__icon">
+              <i class="fa fa-space-shuttle" aria-hidden="true"></i>
+            </div>
+            <div class="worksbox__row__bullet">
+              <div class="worksbox__row__bullet__box">
+                <p>3</p>
+              </div>
+            </div>
+            <div class="worksbox__row__text">
+              <p>Takeoff!</p>
+            </div>          
+          </div>
         </div>
 
-        <!-- step 1 -->
-        <div class="works-box">
-          <i class="fa fa-stethoscope" aria-hidden="true"></i>
-          <div class="works-box__text">
-            <div>1</div>
-            <p>Get a medical check from one of our registered providers</p>
-          </div>          
+      </div>
+    </div>
+
+    <!-- Launch sites -->
+    <div class="launch-title four-boxes-title">
+      Our Launch Sites
+    </div>
+    <div class="launch">
+      <!-- <div class="launch__wrap"> -->
+        <!-- Launch Card -->
+        <div class="box launch-card">
+          <div class="launch-card__front">
+            <div>
+              <p>Baikonur Cosmodrome</p>
+              <p>Kazakhstan</p>
+            </div>
+            <img src="img/Launch_Baikonur.jpg" alt="Baikonur""></img>
+          </div>
+          <div class="launch-card__back">
+            <p>The former Soviet Union achieved many of the "firsts" on the road to human spaceflight from its spaceport at Baikonur.</p>
+
+            <p>These accomplishments included both the first orbital launch of a 
+              satellite, Sputnik, in 1957, and the first orbital launch of a human 
+              into space, Yuri Gagarin, in 1961.</p>
+          </div>
         </div>
-        <!-- step 2 -->
-        <div class="works-box">
-          <i class="fa fa-plane" aria-hidden="true"></i>
-          <div class="works-box__text">
-            <div>2</div>
-            <p>Fly to one of our launch sites at the scheduled time</p>
-          </div>          
+
+        <!-- Launch Card -->
+        <div class="box launch-card">
+          <div class="launch-card__front">
+            <div>
+              <p>Guiana Space Center</p>
+              <p>Kourou (French Guiana)</p>
+            </div>
+            <img src="img/Launch_Guiana.jpg" alt="Guiana"></img>
+          </div>
+          <div class="launch-card__back">
+            <p>In 2002, ESA contracted with Roscosmos (the Russian state space agency) to purchase and launch Soyuz rockets from a purpose built launch pad at Kourou.</p>
+            <p>The program, known as Arianespace Soyuz, flies a Soyuz rocket specially modified to operate in the tropical conditions of Amazonia.</p>
+          </div>
         </div>
-        <!-- step 3 -->
-        <div class="works-box">
-          <i class="fa fa-space-shuttle" aria-hidden="true"></i>
-          <div class="works-box__text">
-            <div>3</div>
-            <p>Takeoff!</p>
-          </div>          
+
+        <!-- Launch Card -->
+        <div class="box launch-card">
+          <div class="launch-card__front">
+            <div>
+              <p>Satish Dhawan Space Center</p>
+              <p>India</p>
+            </div>
+            <img src="img/Launch_SatishDhawan.jpg" alt="SatishDhawan"></img>
+          </div>
+          <div class="launch-card__back">
+            <p>The Satish Dhawan Space Center became operational in 1971. It holds the record for the most satellites launched in a single year—104 payloads, mostly cubesats, in 2017.</p>
+            <p>The Indian Space Research Organization (ISRO) plans to hold its first manned launch in 2021.</p>
+          </div>
+        </div>
+
+        <!-- Launch Card -->
+        <div class="box launch-card">
+          <div class="launch-card__front">
+            <div>
+              <p>Rocket Lab Launch Complex One</p>
+              <p>New Zealand</p>
+            </div>
+            <img src="img/Launch_RocketLab.jpg" alt="RocketLab"></img>
+          </div>
+          <div class="launch-card__back">
+            <p>The first of its kind in the southern hemisphere, Rocket Lab's Launch Complex One (LC-1) is a new, privately-operated commercial spaceport. </p>
+            <p>The high-tech design of the complex includes rockets with carbon fiber bodies and 3D-printed engines. Rocket Lab is one of the newest companies to be launching rockets.</p>
+          </div>
+        </div>
+
+      <!-- </div> -->
+    </div>
+  
+    <!-- Gallery -->
+    <div class="gallery">
+      <div class="gallery__cell">
+        <img src="../img/mars/pia21567_Mars_JuventaeChasma.png" alt="Juventae Chasma">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia21585_Mars_NoctisLabyrinthusMesa.png" alt="Noctis Labyrinthus Mesa">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia21593_Mars_GulliedCrater.png" alt="Gullied Crater">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia21605_Mars_KrupacCrater.png" alt="Krupac Crater">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia21608_Mars_VallesMarineris.png" alt="Valles Marineris">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia21639_Mars_SouthPole.png" alt="South Pole">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia21758_Mars_ImpactCrater.png" alt="Impact Crater">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia22040_Mars_ProctorCrater.png" alt="Proctor Crater">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia22181_Mars_OlympusMonsAreolae.png" alt="Olympus Mons">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia22332_Mars_AlluvialFans.png" alt="Alluvial Fans">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia22512_Mars_BlueSandDune.png" alt="Blue Sand Dune">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia22585_Mars_AramChaos.jpg" alt="Aram Chaos">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia23454_Mars_DanielsonCrater.png" alt="Danielson Crater">
+      </div>
+      <div class="gallery__cell">
+        <img src="../img/mars/pia23740_Mars_MartianPolarIceCap.png" alt="Polar Ice Cap">
+      </div>
+    </div>
+
+    <!-- Places to Visit -->
+    <div class="visit-title">
+      <h2>Places to visit</h2>
+    </div>
+    <div class="visit">
+      <!-- frame -->
+      <div class="visit-frame">
+        <div class="visit-frame__txt">
+          <h3 class="visit-frame__txt__title">
+            Olympus Mons
+          </h3>
+          <p>
+            Olympus Mons is the most extreme volcano in the solar system. 
+            Located in the Tharsis volcanic region, it's about the same size 
+            as the state of Arizona, according to NASA. Its height of 16 
+            miles (25 kilometers) makes it nearly three times the height of 
+            Earth's Mount Everest, which is about 5.5 miles (8.9 km) high.
+          </p>
+          <p>
+            Olympus Mons is a gigantic shield volcano, which was formed 
+            after lava slowly crawled down its slopes. This means that 
+            the mountain is probably easy for future explorers to climb, 
+            as its average slope is only 5 percent. At its summit is a 
+            spectacular depression some 53 miles (85 km) wide, formed by 
+            magma chambers that lost lava (likely during an eruption) and 
+            collapsed.
+          </p>
+        </div>
+        <div class="visit-frame__img">
+          <img src="../img/visit/Visit_OlympusMons.png" alt="Olympus Mons">
+        </div>
+      </div>
+
+      <!-- rx-frame -->
+      <div class="visit-frame-rx">
+        <div class="visit-frame__txt">
+          <h3 class="visit-frame__txt__title">
+            Valles Marineris
+          </h3>
+          <p>
+            Mars not only hosts the largest volcano of the solar system, 
+            but also the largest canyon. Valles Marineris is roughly 1850 
+            miles (3000 km) long, according to NASA. That's about four times 
+            longer than the Grand Canyon, which has a length of about 500 
+            miles (800 km).
+          </p>
+          <p>
+            Researchers aren't sure how Valles Marineris came to be, but 
+            there are several theories about its formation. Many scientists 
+            suggest that when the Tharsis region was formed, it contributed 
+            to the growth of Valles Marineris. Lava moving through the volcanic 
+            region pushed the crust upward, which broke the crust into 
+            fractures in other regions. Over time, these fractures grew into 
+            Valles Marineris.
+          </p>
+        </div>
+        <div class="visit-frame-rx__img">
+          <img src="../img/visit/Visit_Valles_Marineris.png" alt="Valles Marineris">
+        </div>
+      </div>
+
+      <!-- frame -->
+      <div class="visit-frame">
+        <div class="visit-frame__txt">
+          <h3 class="visit-frame__txt__title">
+            Gale Crater
+          </h3>
+          <p>
+            Made famous by the landing of the Curiosity rover in 2012, 
+            Gale Crater is host to extensive evidence of past water. 
+            Curiosity stumbled upon a streambed within weeks of landing, 
+            and found more extensive evidence of water throughout its 
+            journey along the crater floor. Curiosity is now summiting a 
+            nearby volcano called Mount Sharp (Aeolis Mons) and looking 
+            at the geological features in each of its strata.
+          </p>
+        </div>
+        <div class="visit-frame__img">
+          <img src="../img/visit/Visit_GaleCrater.png" alt="Gale Crater">
         </div>
       </div>
     </div>
-    <div class="launch">
-      LAUNCH SITES
-    </div>
-    <div class="gallery">
-      GALLERY
-    </div>
-    <div class="visit">
-      PLACES TO VISIT
-    </div>
-    <div class="contact">
-      CONTACT
-    </div>
 
-    <footer class="footer">
-      FOOTER
-    </footer>
   </div>
   
 </body>
