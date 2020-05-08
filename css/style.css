@@ -30,10 +30,36 @@
       font-size: 1.5rem;
       margin: 0 1rem; }
 
-.four-boxes-title {
-  margin: auto;
-  font-size: 3rem;
-  color: black; }
+.launch-card {
+  color: #2B2A23;
+  transition: all .2s;
+  height: 45rem; }
+  .launch-card:hover .launch-card__front {
+    display: none; }
+  .launch-card:hover .launch-card__back {
+    display: block; }
+  .launch-card__front {
+    display: block;
+    border: 1px solid #D9D9D9; }
+    .launch-card__front div {
+      height: 6rem;
+      background-color: #D9D9D9;
+      font-size: 1.8rem;
+      text-align: center; }
+    .launch-card__front img {
+      max-width: 100%;
+      height: 39rem;
+      display: block; }
+  .launch-card__back {
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 2rem;
+    border: 1px solid #D9D9D9;
+    background-color: #FFFDF0;
+    font-size: 1.8rem; }
+    .launch-card__back p:not(:last-child) {
+      padding-bottom: 2rem; }
 
 *,
 *::before,
@@ -59,7 +85,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: [banner-top] calc(100vh - 10rem) [banner-bottom feature-top] auto [feature-bottom works-title-top] auto [works-title-bottom works-top] 50rem [works-bottom launch-title-top] auto [launch-title-bottom launch-top] auto [launch-bottom gallery-top] auto [gallery-bottom visit-title-top] auto [visit-title-bottom visit-top] auto [visit-bottom] repeat(3, [section] 60vw) [footer-top] 10rem [footer-bottom grid-bottom];
+  grid-template-rows: [grid-top banner-top] calc(100vh - 10rem) [banner-bottom feature-top] auto [feature-bottom works-title-top] auto [works-title-bottom works-top] auto [works-bottom launch-title-top] auto [launch-title-bottom launch-top] auto [launch-bottom gallery-top] auto [gallery-bottom visit-title-top] auto [visit-title-bottom visit-top] auto [visit-bottom contact-top] auto [contact-bottom footer-top] auto [footer-bottom grid-bottom];
   grid-template-columns: [far-left] 1fr [inner-left] 114rem [inner-right] 1fr [far-right]; }
 
 .banner {
@@ -90,12 +116,63 @@ body {
       padding: 1rem 0; }
 
 .contact {
-  background-color: plum; }
+  grid-row: contact-top / contact-bottom;
+  grid-column: far-left / far-right;
+  padding: 20rem 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/Form_Mars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.cform-wrap {
+  max-width: 100rem;
+  margin: auto;
+  padding: 2rem;
+  font-size: 1.8rem;
+  background-color: #3d2510;
+  box-shadow: 0 1.5rem 2rem #3d2510; }
+
+.cform {
+  padding-bottom: 6rem; }
+  .cform__heading {
+    font-weight: 300;
+    font-size: 4rem;
+    text-align: center;
+    padding: 5rem; }
+  .cform__line {
+    padding: .5rem;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .cform__button {
+    margin-top: 5rem; }
+  .cform__entry {
+    width: 30rem;
+    padding: .6rem;
+    margin-left: 2rem; }
+    .cform__entry > * {
+      padding: .4rem; }
+    .cform__entry label {
+      display: inline-block;
+      width: 12rem; }
+    .cform__entry input {
+      color: #2B2A23; }
+
+.btn {
+  padding: .8rem 1.5rem;
+  border-radius: 2rem;
+  color: #3d2510;
+  font-size: 1.8rem;
+  margin: auto; }
 
 .feature {
   grid-column: far-left / far-right;
   display: grid;
   grid-template-columns: 1fr minmax(30rem, 70vw) 1fr;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
   grid-row: feature-top / feature-bottom; }
   .feature__wrap {
     margin: 2rem auto;
@@ -110,7 +187,10 @@ body {
   height: 40rem; }
 
 .footer {
-  background-color: slategray; }
+  grid-row: footer-top / footer-bottom;
+  grid-column: far-left / far-right;
+  height: 30rem;
+  background-color: #2B2A23; }
 
 .gallery {
   grid-column: far-left / far-right;
@@ -134,7 +214,10 @@ body {
   grid-column: inner-left / inner-right;
   height: auto;
   font-size: 4rem;
-  padding: 4rem; }
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: #2B2A23; }
 
 .launch {
   grid-column: far-left / far-right;
@@ -148,38 +231,7 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 8rem; }
-
-.launch-card {
-  color: black;
-  transition: all .2s;
-  height: 45rem; }
-  .launch-card:hover .launch-card__front {
-    display: none; }
-  .launch-card:hover .launch-card__back {
-    display: block; }
-  .launch-card__front {
-    display: block;
-    border: 1px solid #D9D9D9; }
-    .launch-card__front div {
-      height: 5.5rem;
-      background-color: #D9D9D9;
-      font-size: 1.5rem;
-      text-align: center; }
-    .launch-card__front img {
-      max-width: 100%;
-      height: 39.5rem;
-      display: block; }
-  .launch-card__back {
-    display: none;
-    height: 100%;
-    width: 100%;
-    padding: 2rem 2rem;
-    border: 1px solid #D9D9D9;
-    background-color: #FFFDF0;
-    font-size: 1.5rem; }
-    .launch-card__back p:not(:last-child) {
-      padding-bottom: 2rem; }
+  margin-bottom: 10rem; }
 
 .navi {
   background-color: #2B2A23;
@@ -218,17 +270,17 @@ body {
   grid-row: visit-title-top / visit-title-bottom;
   height: auto;
   font-size: 4rem;
-  padding: 4rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  text-align: center;
   background-color: #2B2A23; }
-  .visit-title h2 {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 300; }
 
 .visit {
   grid-column: far-left / far-right;
   grid-row: visit-top / visit-bottom;
-  background-color: #2B2A23; }
+  background-color: #2B2A23;
+  padding-top: 3rem;
+  padding-bottom: 10rem; }
 
 .visit-frame {
   width: 100%;
@@ -284,6 +336,8 @@ body {
 .works {
   grid-row: works-top / works-bottom;
   grid-column: far-left / far-right;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
   background-color: #5C2005;
   color: #F0E7E7;
   display: grid; }
@@ -294,9 +348,10 @@ body {
     justify-content: center;
     font-size: 4rem; }
   .works__title {
+    padding-bottom: 3rem;
     margin: auto;
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #F0E7E7; }
 
 .worksbox {

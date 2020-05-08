@@ -4,7 +4,7 @@ $color-yellow-2: #FAF2CA;
 $color-yellow-3: #F0E7E7;
 
 $color-brown-2: #5C2005;
-$color-brown-3: #2B2A23;
+$color-brown-3: #3d2510;
 
 $color-grey-1: #E3E3E3;
 $color-grey-2: #D9D9D9;
@@ -20,12 +20,16 @@ $font-primary: 'Lato', sans-serif;
 $font-secondary-title-size: 4rem;
 $font-tertiary-title-size:  3rem;
 
+$font-paragraph-size: 1.8rem;
+
 
 // DIMENSIONS
 // ----------
 // Grid: Full-screen dimensions
+$section-padding-top: 8rem;
+$section-padding-bottom: 10rem;
 $section-title-height: auto;
-$section-title-padding: 4rem;
+$section-title-padding-bottom: 2rem;
 $full-width: 120rem;
 $inner-width: 114rem;
 

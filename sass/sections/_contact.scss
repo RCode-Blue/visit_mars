@@ -1,3 +1,77 @@
 .contact {
-  background-color: plum;
+  grid-row: contact-top / contact-bottom;
+  grid-column: far-left / far-right;
+
+  padding: 20rem 0;
+
+  background-image: linear-gradient(to right, 
+    rgba($color-black, .7) 0%, 
+    rgba($color-black, .4) 100%),
+    url("../img/Form_Mars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.cform-wrap {
+  max-width: 100rem;
+  margin: auto;
+  padding: 2rem;
+
+  font-size: 1.8rem;
+  background-color: $color-brown-3;
+  box-shadow: 0 1.5rem 2rem $color-brown-3;
+}
+
+.cform {
+  padding-bottom: 6rem;
+
+  &__heading {
+    font-weight: 300;
+    font-size: $font-secondary-title-size;
+    text-align: center;
+    padding: 5rem;
+  }
+
+  &__line {
+    padding: .5rem;
+    font-size: $font-paragraph-size;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__button {
+    margin-top: 5rem;
+  }
+
+  &__entry {
+    width: 30rem;
+    padding: .6rem;
+    margin-left: 2rem;
+
+    &>* {
+      padding: .4rem;
+    }
+
+    label {
+      display: inline-block;
+      width: 12rem;
+    }
+
+    input {
+      color: $color-grey-3;
+    }
+  }
+}
+
+.btn {
+  padding: .8rem 1.5rem;
+  border-radius: 2rem;
+  color: $color-brown-3;
+  font-size: $font-paragraph-size;
+
+  margin: auto;
 }

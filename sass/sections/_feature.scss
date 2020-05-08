@@ -1,5 +1,6 @@
 .feature {
   @include four-boxes-section;
+  @include section-padding;
   grid-row: feature-top / feature-bottom;
 
   &__wrap {

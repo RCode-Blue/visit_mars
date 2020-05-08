@@ -3,20 +3,15 @@
   grid-row: visit-title-top / visit-title-bottom;
 
   @include section-title;
-  background-color: $color-brown-3;
-
-  h2 {
-    text-align: center;
-    
-    font-size: $font-secondary-title-size;
-    font-weight: 300;
-  }
+  background-color: $color-grey-3;
 }
 
 .visit {
   grid-column: far-left / far-right;
   grid-row: visit-top / visit-bottom;
-  background-color: $color-brown-3;
+  background-color: $color-grey-3;
+  padding-top: 3rem;
+  padding-bottom: $section-padding-bottom;
 }
 
 .visit-frame {

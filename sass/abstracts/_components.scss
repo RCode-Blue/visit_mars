@@ -1,10 +1,9 @@
 // ----- REUSABLE CODE -----
 
-// Feature and Launch boxes
+// Feature Boxes
 .box {
   flex: 1 1 24rem;
   margin: 1rem 2rem;
-  // height: 40rem;
   min-width: 24rem;
   max-width: 38rem;
 
@@ -49,109 +48,57 @@
   }
 }
 
-.four-boxes-title {
-  // display: block;
-  // text-align: center;
-  margin: auto;
-  font-size: 3rem;
-  // color: $color-brown-3;
-  color: black;
+// Launch Cards
+.launch-card {
+  color: $color-grey-3;
+  transition: all .2s;
+  height: 45rem;
+
+  &:hover &__front {
+      display: none;
+    }
+
+  &:hover &__back {
+      display: block;
+    }
+
+
+  &__front {
+    display: block;
+    border: 1px solid $color-grey-2;
+    div {
+      height: 6rem;
+      background-color: $color-grey-2;
+
+      font-size: $font-paragraph-size;
+      text-align: center;
+
+    }
+    img {
+      max-width: 100%;
+      height: 39rem;
+      display: block;        
+    }
   }
 
-// #region
-// .row {
-//   max-width: $inner-width;
-//   margin: 0 auto;
-// }
+  &__back {
+    display: none;
+    height: 100%;
+    width: 100%;
+    padding: 2rem 2rem;
 
-// --- WORKS-BOX - How it Works Section ---
-// .works-box {
-//   display: grid;
-//   grid-template-columns: 10rem 30rem;
-//   grid-template-rows: 10rem;
+    border: 1px solid $color-grey-2;
+    background-color: $color-yellow-1;
 
-//   margin: 2rem 0;
+    font-size: $font-paragraph-size;
 
-//   border: 1px solid $color-yellow-3;
-//   color: $color-yellow-3;
+    p {
+      &:not(:last-child) {
+        padding-bottom: 2rem;;
+      }
+    }
+  }
+}
 
-//   font-size: 3rem;
-
-//   i {
-//     margin: auto;
-//     font-size: 4rem;
-//   }
-
-//   &__text {
-//     display: flex;
-//     // text-align: center;
-//     // flex-direction: row;
-//       div {
-//         flex: 0 0 5rem;
-        
-//         margin: auto;
-
-//         text-align: center;
-//         }
-
-//       p {
-//         flex: 1 0 80rem;
-
-//         margin: auto 0;
-//         margin-left: 5rem;
-//       }
-//   }
-
-
-// }
-
-
-// --- BOX - Feature section ---
-// .box {
-//   display: flex;
-//   flex-direction: column;
-
-//   &__feat-top {
-//     flex-grow: .8;
-    
-//     border: 1px solid $color-grey-2;
-//     border-radius: 5px 5px 0 0;
-//     background-color: $color-white;
-
-//     text-align: center;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//   }
-
-//   &__feat-bottom {
-//     flex-grow: 3;
-
-//     border: 1px solid $color-grey-2;
-//     border-radius: 0 0 5px 5px;
-//     background-color: $color-yellow-1;
-//     color: $color-grey-3;
-//     // display: flex;
-//     // flex-direction: column;
-
-//     &__title {
-//       text-align: center;
-//       font-size: 2.5rem;
-//       font-weight: 400;
-
-//       margin-top: 1rem;
-//       margin-bottom: 1rem;
-      
-//     }
-
-//     &__text {
-//       font-size: 1.5rem;
-//       margin: 0 1rem;
-//     }
-//   }
-// }
-
-// ---LAUNCHBOX - Launch section ---
-// #endregion
 
 

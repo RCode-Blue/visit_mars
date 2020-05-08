@@ -3,7 +3,7 @@
   grid-column: far-left / far-right;
 
   // padding: 10rem 0;
-
+  @include section-padding;
   background-color: $color-brown-2;
   color: $color-yellow-3;
 
@@ -15,11 +15,11 @@
   }
 
   &__title {
-    // @include inner-div-txt;
+    padding-bottom: 3rem;
     margin: auto;
 
     text-align: center;
-    font-size: 3rem;
+    font-size: $font-secondary-title-size;
     color: $color-yellow-3
   }
 }

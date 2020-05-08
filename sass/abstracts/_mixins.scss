@@ -13,9 +13,15 @@
 @mixin section-title {
   height: $section-title-height;
   font-size: $font-secondary-title-size;
-  padding: $section-title-padding;
+  padding-top: $section-padding-top;
+  padding-bottom: $section-title-padding-bottom;
+  text-align: center;
 }
 
+@mixin section-padding {
+  padding-top: $section-padding-top;
+  padding-bottom: $section-padding-bottom;
+}
 
 // FOUR-BOXES MIXINS:
 // -----------------
@@ -65,7 +71,7 @@
     }
 
     p {
-      font-size: 1.8rem;
+      font-size: $font-paragraph-size;
     }
   }
 
@@ -83,26 +89,3 @@
 
 
 
-// #region  -- OLD STUFF --
-
-// Wrapper div for 4 boxes
-// @mixin four-boxes {
-//   max-width: $inner-width;
-//   height: 40rem;
-//   margin: 5rem auto;
-
-//   display: grid;
-//   grid-template-columns: repeat(4, 25rem);
-//   grid-gap: 3rem;
-//   justify-content: space-around;
-// }
-
-
-// // Center a child div using flex
-// @mixin center-flex {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   flex-direction: column;
-// }
-// #endregion
