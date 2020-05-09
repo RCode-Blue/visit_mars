@@ -1,6 +1,6 @@
 
-// GENERAL MIXINS
-// --------------
+// #region GENERAL MIXINS
+// ----------------------
 // Centre-aligns a wrapper div
 @mixin inner-div-txt {
   width: $inner-width;
@@ -8,6 +8,22 @@
 
   align-items: center;
   justify-content: center;
+
+  @include respond(desktop) {
+    width: $inner-width-desktop;
+  }
+
+  @include respond (laptop) {
+    width: $inner-width-laptop;
+  }
+
+  @include respond (tab-land) {
+    width: $inner-width-tab-land;
+  }
+
+  @include respond(tab-port) {
+    width: $inner-width-tab-port;
+  }
 }
 
 @mixin section-title {
@@ -22,21 +38,23 @@
   padding-top: $section-padding-top;
   padding-bottom: $section-padding-bottom;
 }
+// #endregion
 
-// FOUR-BOXES MIXINS:
-// -----------------
+// #region FOUR-BOXES MIXINS:
+// -------------------------
 // Section layout
 @mixin four-boxes-section {
   grid-column: far-left / far-right;
 
   display: grid;
-  grid-template-columns: 1fr minmax(30rem, 70vw) 1fr;
+  // grid-template-columns: 1fr minmax(30rem, 70vw) 1fr;
 }
 
 // Outer wrap layout
 @mixin four-boxes-wrap {
   margin: $fourboxes-wrap-margin-y $fourboxes-wrap-margin-x;
   grid-column: 2/3;
+  width: $inner-width;
 
   background-color: $color-yellow-2;
 
@@ -44,12 +62,27 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+
+  @include respond(desktop) {
+    width: $inner-width-desktop;
+  }
+
+    @include respond(laptop) {
+    width: $inner-width-laptop;
+  }
+
+    @include respond(tab-land) {
+      width: $inner-width-tab-land;
+  }
+
 }
+// #endregion
 
 
 
-// TEXT-IMAGE BOX MIXINS:
-// ---------------------
+
+// TEXT-IMAGE BOX MIXIN:
+// --------------------
 @mixin txt-img-box {
   width: 100%;
   padding: 0 2rem;
@@ -58,26 +91,55 @@
   display: flex;
   flex-wrap: wrap;
 
+  @include respond(tab-port) {
+    padding: 1rem 0;
+    flex-direction: column;
+  }
+
   &__txt {
     flex: 1 1 50%;
-    min-width: 20rem;
+    min-width: 40rem;
     padding: 5rem;
+    align-self: center;
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
 
     &__title {
       font-size: $font-tertiary-title-size;
       text-align: center;
       font-weight: 300;
-      margin-bottom: 3rem;
+      margin-bottom: 1.5rem;
+
+      @include respond(laptop) {
+        font-size: $font-paragraph-size;
+      }
+    }
+
+    &__para {
+      padding: .8rem;
     }
 
     p {
       font-size: $font-paragraph-size;
+
+      @include respond(laptop) {
+        font-size: $font-paragraph-size-sm;
+      }
     }
   }
 
   &__img {
     flex: 1 1 50%;
-    max-height: 45rem;
+    height: 100%;
+    width: 100%;
+
+    @include respond(tab-port) {
+      flex: 1 1 20rem;
+      max-height: 30rem;
+      width: 100%;
+    }
 
     img {
       width: 100%;
@@ -86,6 +148,4 @@
     }
   }
 }
-
-
 

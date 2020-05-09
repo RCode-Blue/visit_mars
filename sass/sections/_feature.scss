@@ -1,10 +1,13 @@
 .feature {
   @include four-boxes-section;
-  @include section-padding;
+
+  @include four-boxes-wrap;
+  // @include section-padding;
+
   grid-row: feature-top / feature-bottom;
 
   &__wrap {
-    @include four-boxes-wrap;
+    // @include four-boxes-wrap;
   }
 }
 

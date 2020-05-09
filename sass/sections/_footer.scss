@@ -2,7 +2,101 @@
   grid-row: footer-top / footer-bottom;
   grid-column: far-left / far-right;
 
-  height: 30rem;
-
+  padding: 2rem 5rem;
   background-color: $color-grey-3;
+  font-size: $font-footer-size;
+
+  @include respond(laptop) {
+    font-size: $font-footer-size-sm;
+  }
+
+  &__row1 {
+    display: flex;
+    justify-content: center;
+    height: 10rem;
+
+    @include respond(laptop) {
+      height: 8rem
+    }
+
+    
+
+    &__left {
+      height: 100%;
+      width: 10rem;
+      display: inline-block;
+
+      img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        object-fit: contain;
+      }
+    }
+
+    &__right {
+      height: 10rem;
+      padding: auto 10rem;
+      margin-left: 8rem;
+      display: flex;
+      align-items: center;
+
+      @include respond(laptop) {
+        height: 8rem;
+      }
+
+      @include respond(tab-land) {
+        padding: auto;
+      }
+    }
+  }
+
+  &__row2 {
+    margin: auto;
+    height: 10rem;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  &__list {
+    margin: auto;
+    list-style: none;
+
+    &__item {
+      display: inline-block;
+      margin: auto 2rem;
+
+      @include respond (laptop) {
+        width: 18%;
+      }
+
+      @include respond (tab-land) {
+        width: 20%;
+      }
+
+      @include respond (tab-port) {
+        width: 33%;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+
+    &:link,
+    &:visited {
+      color: $color-grey-1;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all .3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $color-yellow-2;
+      transform: scale(.9);
+    }
+  }
+
+
 }

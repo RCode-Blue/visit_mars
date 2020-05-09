@@ -63,15 +63,29 @@
 
     input {
       color: $color-grey-3;
+      background-color: $color-yellow-2;
+      box-shadow: $color-grey-3 3px 3px 8px;
+    }
+
+    checkbox {
+      display: inline-block;
+      width: 5rem;
     }
   }
 }
 
 .btn {
+  display: inline-block;
   padding: .8rem 1.5rem;
   border-radius: 2rem;
   color: $color-brown-3;
   font-size: $font-paragraph-size;
-
+  background-color: $color-yellow-2;
   margin: auto;
+  transition: all .2s;
+
+  &:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
 }

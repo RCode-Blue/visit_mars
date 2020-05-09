@@ -21,6 +21,9 @@ $font-secondary-title-size: 4rem;
 $font-tertiary-title-size:  3rem;
 
 $font-paragraph-size: 1.8rem;
+$font-paragraph-size-sm: 1.6rem;
+$font-footer-size: 1.4rem;
+$font-footer-size-sm: 1.1rem;
 
 
 // DIMENSIONS
@@ -32,6 +35,10 @@ $section-title-height: auto;
 $section-title-padding-bottom: 2rem;
 $full-width: 120rem;
 $inner-width: 114rem;
+$inner-width-desktop: 112rem;
+$inner-width-laptop: 80rem;
+$inner-width-tab-land: 55rem;
+$inner-width-tab-port: 60rem;
 
 // FourBoxes: Full-screen dimensions
 $fourboxes-wrap-margin-y: 2rem;
@@ -42,6 +49,8 @@ $fourboxes-wrap-margin-x: auto;
 $works-row-height: auto;
 // $works-row-height: 11rem; // Should be same size as smallsquare-size
 $works-smallsquare-size: 11rem;
+$works-smallsquare-size-tab-land: 2rem;
+
 
 // Text-Image box dimenstions:
 // $txtimg-rowheight: 35rem; // Text-Image frame row height

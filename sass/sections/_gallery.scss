@@ -7,16 +7,30 @@
   justify-content: center;
   gap: 0 0;
 
+
+
   &__cell {
     width: calc(98.5vw / 7);
     height: calc(98.5vw / 7);
     margin: 0;
 
+    @include respond(phone) {
+      display: none;
+    }
+
     img {
+      display: inline-block;
       width: 100%;
       height: 100%;
       object-fit: cover;
       overflow: hidden;
+      transition: all .2s;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+
+      
     }
   }
 }

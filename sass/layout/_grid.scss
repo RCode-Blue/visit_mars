@@ -12,8 +12,33 @@
     auto [visit-bottom contact-top]
     auto [contact-bottom footer-top]
     auto [footer-bottom grid-bottom];
+
   
   grid-template-columns: [far-left] 1fr [inner-left] 
-    $inner-width [inner-right] 
+    auto [inner-right] 
     1fr [far-right];
+
+    @include respond(desktop) {
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-desktop [inner-right] 
+        1fr [far-right];
+    }
+
+    @include respond(laptop) {
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-laptop [inner-right] 
+        1fr [far-right];
+    }
+
+    @include respond(tab-land) {
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-tab-land [inner-right] 
+        1fr [far-right];
+    }
+
+    @include respond(tab-port) {
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-tab-port [inner-right] 
+        1fr [far-right];
+    }
 }

@@ -12,6 +12,14 @@
   &__wrap {
     @include inner-div-txt;
     font-size: $font-secondary-title-size;
+
+    @include respond(laptop) {
+      font-size: $font-tertiary-title-size;
+    }
+
+    @include respond(desktop) {
+      font-size: $font-tertiary-title-size;
+    }
   }
 
   &__title {
@@ -29,10 +37,9 @@
 .worksbox {
   width: 100%;
 
-  // margin: 2rem auto;
-
   display: flex;
   flex-direction: column;
+
 
   &__row {
     width: 100%;
@@ -44,11 +51,11 @@
     height: $works-row-height;
     margin: 2rem 0;
 
-    // border: 1px dashed yellow;
-
-    &>div {
-      // height: $works-row-height;
-      // border: 1px solid cyan;
+    @include respond(tab-land) {
+      flex-direction: column;
+      margin: 3rem 0;
+      padding: 0 2rem;
+      // justify-content: center;
     }
 
     &__icon {
@@ -60,6 +67,11 @@
 
       i {
         margin: auto;
+      }
+
+      @include respond(tab-land) {
+        flex: 0 1 $works-smallsquare-size-tab-land;
+        padding: 0;
       }
     }
 
@@ -78,6 +90,10 @@
 
         p {
           transform: translate(16px, -8px);
+
+          @include respond(laptop) {
+            transform: translate(17px, 0);
+          }
         }
       }
     }
@@ -86,14 +102,31 @@
       // border: 1px dashed yellowgreen;
 
       flex: 1 1 50rem;
-      min-width: 30rem;
-      max-width: 100rem;
+      min-width: 20rem;
+      // max-width: 100rem;
 
       display: flex;
       align-items: flex-start;
 
+     
+
+      @include respond(desktop) {
+        // max-width: 48rem;
+      }
+
+      @include respond(tab-land) {
+        flex: 0 1 10rem;
+        text-align: center;
+        margin: auto;
+      }
+
+
       p {
         margin: auto 1rem;
+        @include respond(tab-land) {
+          margin: 0 auto;
+
+        }
       }
     }
 
