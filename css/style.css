@@ -7,6 +7,10 @@
     .box {
       flex: 1 1 24rem;
       max-width: 40rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .box {
+      flex: 0 1 34rem;
+      max-width: 34rem; } }
   .box__feat-top {
     flex-grow: .8;
     border: 1px solid #D9D9D9;
@@ -102,6 +106,9 @@ body {
   @media only screen and (max-width: 57em) {
     .container {
       grid-template-columns: [far-left] 1fr [inner-left] 60rem [inner-right] 1fr [far-right]; } }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      grid-template-columns: [far-left] 1fr [inner-left] 36rem [inner-right] 1fr [far-right]; } }
 
 .banner {
   grid-column: far-left / far-right;
@@ -119,14 +126,32 @@ body {
     grid-row: 2/3;
     grid-column: 2/-1;
     font-size: 8rem; }
+    @media only screen and (max-width: 57em) {
+      .banner__title {
+        font-size: 6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .banner__title {
+        font-size: 4rem; } }
   .banner__slogan {
     grid-row: 3/4;
     grid-column: 3/6;
     font-size: 3rem; }
+    @media only screen and (max-width: 57em) {
+      .banner__slogan {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .banner__slogan {
+        font-size: 1.8rem; } }
   .banner__blurb {
     grid-row: 4/5;
     grid-column: 2/7;
     font-size: 1.8rem; }
+    @media only screen and (max-width: 57em) {
+      .banner__blurb {
+        font-size: 1.6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .banner__blurb {
+        font-size: 1.4rem; } }
     .banner__blurb p {
       padding: 1rem 0; }
 
@@ -175,7 +200,7 @@ body {
     .cform__entry input {
       color: #2B2A23;
       background-color: #FAF2CA;
-      box-shadow: #2B2A23 3px 3px 8px; }
+      box-shadow: #1c1b17 4px 4px 9px; }
     .cform__entry checkbox {
       display: inline-block;
       width: 5rem; }
@@ -214,6 +239,9 @@ body {
   @media only screen and (max-width: 64em) {
     .feature {
       width: 55rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .feature {
+      width: 36rem; } }
 
 .feat-card {
   height: 40rem; }
@@ -342,6 +370,9 @@ body {
   @media only screen and (max-width: 64em) {
     .launch {
       width: 55rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .launch {
+      width: 36rem; } }
 
 .navi {
   background-color: #2B2A23;
@@ -363,17 +394,31 @@ body {
     padding: 0 2rem;
     font-size: 2rem;
     color: #F0E7E7; }
+    @media only screen and (max-width: 57em) {
+      .navi__menu {
+        font-size: 1.8rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .navi__menu {
+        font-size: 1.5rem; } }
     .navi__menu li {
       flex: 0 1 18rem;
       align-self: center;
       align-content: center;
       list-style: none;
       display: inline-block;
+      text-align: center;
+      transition: all .2s; }
+    .navi__menu li a {
+      padding: 1rem;
+      display: block;
       text-align: center; }
     .navi__menu li a:link,
     .navi__menu li a:visited {
       color: #E3E3E3;
       text-decoration: none; }
+    .navi__menu li a:hover,
+    .navi__menu li a:active {
+      border-bottom: 2px solid #F0E7E7; }
 
 .visit-title {
   grid-column: far-left / far-right;
@@ -417,7 +462,7 @@ body {
       margin-bottom: 1.5rem; }
       @media only screen and (max-width: 75em) {
         .visit-frame__txt__title {
-          font-size: 1.8rem; } }
+          font-size: 2.3rem; } }
     .visit-frame__txt__para {
       padding: .8rem; }
     .visit-frame__txt p {
@@ -465,7 +510,7 @@ body {
       margin-bottom: 1.5rem; }
       @media only screen and (max-width: 75em) {
         .visit-frame-rx__txt__title {
-          font-size: 1.8rem; } }
+          font-size: 2.3rem; } }
     .visit-frame-rx__txt__para {
       padding: .8rem; }
     .visit-frame-rx__txt p {
@@ -513,6 +558,9 @@ body {
     @media only screen and (max-width: 57em) {
       .works__wrap {
         width: 60rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .works__wrap {
+        width: 36rem; } }
     @media only screen and (max-width: 75em) {
       .works__wrap {
         font-size: 3rem; } }
@@ -566,7 +614,7 @@ body {
         border-radius: 50%; }
         .worksbox__row__bullet__box p {
           transform: translate(16px, -8px); }
-          @media only screen and (max-width: 75em) {
+          @media only screen and (max-width: 100em) {
             .worksbox__row__bullet__box p {
               transform: translate(17px, 0); } }
     .worksbox__row__text {

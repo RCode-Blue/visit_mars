@@ -25,6 +25,15 @@
     grid-column: 2/-1;    
 
     font-size: 8rem;
+
+    @include respond(tab-port) {
+      font-size: 6rem;
+    }
+
+    @include respond(phone) {
+      font-size: 4rem;
+    }
+
   }
 
   &__slogan {
@@ -32,6 +41,14 @@
     grid-column: 3/6;
 
     font-size: 3rem;
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.8rem;
+    }
   }
 
   &__blurb {
@@ -39,6 +56,14 @@
     grid-column: 2/7;
 
     font-size: 1.8rem;
+
+    @include respond(tab-port) {
+      font-size: 1.6rem;
+    }
+
+    @include respond(phone) {
+      font-size: 1.4rem;
+    }
 
     p {
       padding: 1rem 0;

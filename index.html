@@ -11,12 +11,21 @@
 </head>
 <body>
   
-  <nav class="navi">
+  <nav class="navi" id="top">
     <img src="../img/logo/logo-white-l.png" class="navi__logo-lg"></img>
     <ul class="navi__menu">
-      <li><a href="#">How it Works</a></li>
-      <li><a href="#">Launch Sites</a></li>
-      <li><a href="#">Places to Visit</a></li>
+      <li><a href="#works" class="nav-item">
+        How it Works
+      </a></li>
+      <li><a href="#launch" class="nav-item">
+        Launch Sites
+      </a></li>
+      <li><a href="#visit" class="nav-item">
+        Places to Visit
+      </a></li>
+      <li><a href="#contact" class="nav-item">
+        Contact Us
+      </a></li>
     </ul>
   </nav>
 
@@ -40,7 +49,7 @@
     </section>
 
     <!-- Feature -->
-    <section class="feature">
+    <section class="feature" id="features">
       <!-- <div class="feature__wrap"> -->
         <div class="box feat-card">
           <div class="box__feat-top">
@@ -98,7 +107,7 @@
     </section>
     
     <!-- How it works -->
-    <section class="works">
+    <section class="works" id="works">
       <div class="works__title">
         How it Works
       </div>
@@ -152,7 +161,7 @@
     </section>
 
     <!-- Launch sites -->
-    <div class="launch-title">
+    <div class="launch-title" id="launch">
       Our Launch Sites
     </div>
     <div class="launch">
@@ -224,7 +233,7 @@
     </div>
   
     <!-- Gallery -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="gallery__cell">
         <img src="../img/mars/pia21567_Mars_JuventaeChasma.png" 
         title="Juventae Chasma"
@@ -298,7 +307,7 @@
     </section>
 
     <!-- Places to Visit -->
-    <div class="visit-title">
+    <div class="visit-title" id="visit">
       Places to visit
     </div>
     <div class="visit">
@@ -377,7 +386,7 @@
     </div>
 
     <!-- Contact Us -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="cform-wrap">
         <form action="#" class="cform">
           <h2 class="cform__heading">
@@ -386,11 +395,11 @@
           <div class="cform__line">
             <div class="cform__entry">
               <label for="firstname" class="cform__label">First Name</label>
-              <input type="text" class="cform__input" id="firstname">
+              <input type="text" placeholder="First Name" class="cform__input" id="firstname">
             </div>
             <div class="cform__entry">
               <label for="lastname" class="cform__label">Last Name</label>
-              <input type="text" class="cform__input" id-"lastname">
+              <input type="text" placeholder="Last Name" class="cform__input" id-"lastname">
             </div>
           </div>
           <div class="cform__line">
@@ -417,16 +426,16 @@
   <footer class="footer">
     <div class="footer__row1">
       <div class="footer__row1__left">
-        <img src="../img/logo/logo-white-l.png" alt="Logo">
+        <a href="#top"><img src="../img/logo/logo-white-l.png" alt="Logo"></a>
       </div>
       <div class="footer__row1__right">
         <ul class="footer__list">
-          <li class="footer__list__item"><a href="#" class="footer__link">What we offer</a></li>
-          <li class="footer__list__item"><a href="#" class="footer__link">How it works</a></li>
-          <li class="footer__list__item"><a href="#" class="footer__link">Our launch sites</a></li>
-          <li class="footer__list__item"><a href="#" class="footer__link">Gallery</a></li>
-          <li class="footer__list__item"><a href="#" class="footer__link">Places to visit</a></li>
-          <li class="footer__list__item"><a href="#" class="footer__link">Contact</a></li>
+          <li class="footer__list__item"><a href="#features" class="footer__link">What we offer</a></li>
+          <li class="footer__list__item"><a href="#works" class="footer__link">How it works</a></li>
+          <li class="footer__list__item"><a href="#launch" class="footer__link">Our launch sites</a></li>
+          <li class="footer__list__item"><a href="#gallery" class="footer__link">Gallery</a></li>
+          <li class="footer__list__item"><a href="#visit" class="footer__link">Places to visit</a></li>
+          <li class="footer__list__item"><a href="#contact" class="footer__link">Contact</a></li>
         </ul>
       </div>
     </div>

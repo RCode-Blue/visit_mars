@@ -24,6 +24,10 @@
   @include respond(tab-port) {
     width: $inner-width-tab-port;
   }
+
+  @include respond(phone) {
+    width: $inner-width-phone;
+  }
 }
 
 @mixin section-title {
@@ -39,6 +43,7 @@
   padding-bottom: $section-padding-bottom;
 }
 // #endregion
+
 
 // #region FOUR-BOXES MIXINS:
 // -------------------------
@@ -75,10 +80,12 @@
       width: $inner-width-tab-land;
   }
 
+  @include respond(phone) {
+    width: $inner-width-phone;
+  }
+
 }
 // #endregion
-
-
 
 
 // TEXT-IMAGE BOX MIXIN:
@@ -113,7 +120,7 @@
       margin-bottom: 1.5rem;
 
       @include respond(laptop) {
-        font-size: $font-paragraph-size;
+        font-size: $font-tertiary-title-size-sm;
       }
     }
 

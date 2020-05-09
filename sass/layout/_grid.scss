@@ -41,4 +41,10 @@
         $inner-width-tab-port [inner-right] 
         1fr [far-right];
     }
+
+    @include respond(phone) {
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-phone [inner-right] 
+        1fr [far-right];
+    }
 }

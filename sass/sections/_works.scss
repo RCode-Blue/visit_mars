@@ -55,7 +55,6 @@
       flex-direction: column;
       margin: 3rem 0;
       padding: 0 2rem;
-      // justify-content: center;
     }
 
     &__icon {
@@ -91,24 +90,23 @@
         p {
           transform: translate(16px, -8px);
 
-          @include respond(laptop) {
+          @include respond(desktop) {
             transform: translate(17px, 0);
           }
+
+          // @include respond(laptop) {
+          //   transform: translate(17px, 0);
+          // }
         }
       }
     }
 
     &__text {
-      // border: 1px dashed yellowgreen;
-
       flex: 1 1 50rem;
       min-width: 20rem;
-      // max-width: 100rem;
 
       display: flex;
       align-items: flex-start;
-
-     
 
       @include respond(desktop) {
         // max-width: 48rem;

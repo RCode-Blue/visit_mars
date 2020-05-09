@@ -9,6 +9,7 @@ $color-brown-3: #3d2510;
 $color-grey-1: #E3E3E3;
 $color-grey-2: #D9D9D9;
 $color-grey-3: #2B2A23;
+$color-grey-4: #1c1b17;
 
 $color-white: #FFFFFF;
 $color-black: #000000;
@@ -17,8 +18,11 @@ $color-black: #000000;
 // FONTS
 $font-primary: 'Lato', sans-serif;
 
+
+
 $font-secondary-title-size: 4rem;
 $font-tertiary-title-size:  3rem;
+$font-tertiary-title-size-sm:  2.3rem;
 
 $font-paragraph-size: 1.8rem;
 $font-paragraph-size-sm: 1.6rem;
@@ -39,6 +43,7 @@ $inner-width-desktop: 112rem;
 $inner-width-laptop: 80rem;
 $inner-width-tab-land: 55rem;
 $inner-width-tab-port: 60rem;
+$inner-width-phone: 36rem;
 
 // FourBoxes: Full-screen dimensions
 $fourboxes-wrap-margin-y: 2rem;

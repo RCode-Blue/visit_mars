@@ -4,15 +4,16 @@
 .box {
   flex: 1 1 24rem;
   margin: 1rem 2rem;
-  // min-width: 24rem;
-  // max-width: 30rem;
 
   @include respond(tab-port) {
     flex: 1 1 24rem;
     max-width: 40rem;
   }
 
-  // max-width: 38rem;
+  @include respond(phone) {
+    flex: 0 1 34rem;
+    max-width: 34rem;
+  }
 
   display: flex;
   flex-direction: column;
