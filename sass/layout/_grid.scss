@@ -42,6 +42,12 @@
         1fr [far-right];
     }
 
+    @include respond(phone-land) {
+      grid-template-columns: [far-left] 1fr [inner-left] 
+        $inner-width-phone-land [inner-right] 
+        1fr [far-right];
+    }
+
     @include respond(phone) {
       grid-template-columns: [far-left] 1fr [inner-left] 
         $inner-width-phone [inner-right] 

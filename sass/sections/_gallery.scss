@@ -14,7 +14,7 @@
     height: calc(98.5vw / 7);
     margin: 0;
 
-    @include respond(phone) {
+    @include respond(phone-land) {
       display: none;
     }
 

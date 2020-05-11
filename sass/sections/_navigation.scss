@@ -1,18 +1,57 @@
 .navi {  
-  background-color: $color-grey-3;
+  position: fixed;
+  width: 100%;
+  height: $navbar-height-lg;
+
+  // float: top;
+
+  // background-color: $color-grey-3;
+  background-image: linear-gradient(
+    to bottom,
+    rgba($color-black, 1) 0%,
+    rgba($color-black, 1) 100%
+  );
   display: flex;
   
   margin: 0;
   padding-right: 0;
+
+
+  @include respond(phone-land) {
+    height: $navbar-height-sm;
+    background-color: transparent;
+    background-image: linear-gradient(
+      to bottom,
+      rgba($color-black, 1) 0%,
+      rgba($color-black, .4) 90%,
+      rgba($color-black, 0) 100%
+    );
+
+    @include respond(phone) {
+      height: $navbar-height-sm;
+    }
+  }
   
   &__logo-lg {
-    flex: 0 0 10rem;
+    flex: 0 0 $navbar-height-lg;
     justify-self: center;
 
-    width: 10rem;
-    height: 10rem;
+    width: $navbar-height-lg;
+    height: $navbar-height-lg;
     padding: 1rem 2rem;
 
+    @include respond(phone-land) {
+      flex: 0 0 $navbar-height-md;
+      height: $navbar-height-md;
+      width: $navbar-height-md;
+    }
+
+    @include respond(phone) {
+      flex: 0 0 $navbar-height-sm;
+      height: $navbar-height-sm;
+      width: $navbar-height-sm;
+    }
+    
   }
 
   &__menu {
@@ -29,12 +68,20 @@
     color: $color-yellow-3;
 
     @include respond(tab-port) {
-      font-size: 1.8rem;
+      display: flex;
+    }
+
+    @include respond(phone-land) {
+      // font-size: 1.5rem;
+      font-size: $font-paragraph-size-sm;
+      display: none;
     }
 
     @include respond(phone) {
-      font-size: 1.5rem;
+      font-size: $font-footer-size;
     }
+
+  }
 
     li {
       flex: 0 1 18rem;
@@ -46,6 +93,12 @@
 
       text-align: center;
       transition: all .2s;
+
+      @include respond(phone-land) {
+        width: 100%;
+        background-color: $color-grey-4;
+        opacity: .9;
+      }
     }
 
     li a {
@@ -64,5 +117,26 @@
     li a:active {
       border-bottom: 2px solid $color-yellow-3;
     }
-  }
+  
+
 }
+
+.mobile-navi-icon {
+  margin: auto 2rem auto auto;
+  // margin: auto;
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+
+  @include respond(phone-land) {
+    display: inline-block;
+    font-size: 2.2rem;
+  }
+
+  @include respond(phone) {
+    font-size: 2rem;
+  }
+
+}
+
+

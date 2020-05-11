@@ -9,6 +9,12 @@
 
   display: grid;
 
+  // @include respond(phone-land) {
+  //   grid-column: unset;
+  //   width: 100vw;
+  //   // width: $inner-width-phone-land;
+  // }
+
   &__wrap {
     @include inner-div-txt;
     font-size: $font-secondary-title-size;
@@ -23,8 +29,11 @@
   }
 
   &__title {
+    // width: $inner-width-phone-land;
     padding-bottom: 3rem;
-    margin: auto;
+    // padding: auto;
+
+    // margin: auto;
 
     text-align: center;
     font-size: $font-secondary-title-size;
@@ -55,6 +64,10 @@
       flex-direction: column;
       margin: 3rem 0;
       padding: 0 2rem;
+    }
+
+    @include respond(phone-land) {
+      padding: 0;
     }
 
     &__icon {

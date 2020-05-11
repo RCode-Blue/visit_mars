@@ -10,7 +10,7 @@
     max-width: 40rem;
   }
 
-  @include respond(phone) {
+  @include respond(phone-land) {
     flex: 0 1 34rem;
     max-width: 34rem;
   }

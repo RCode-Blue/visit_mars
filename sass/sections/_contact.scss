@@ -11,6 +11,10 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  @include respond(phone) {
+    padding: 10rem 0;
+  }
 }
 
 .cform-wrap {
@@ -47,31 +51,58 @@
     margin-top: 5rem;
   }
 
+ 
+
   &__entry {
     width: 30rem;
     padding: .6rem;
     margin-left: 2rem;
 
+    @include respond(phone-land) {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+    }
+
+    @include respond(phone) {
+      
+    }
+
     &>* {
       padding: .4rem;
     }
 
-    label {
-      display: inline-block;
-      width: 12rem;
-    }
-
-    input {
-      color: $color-grey-3;
-      background-color: $color-yellow-2;
-      box-shadow: $color-grey-4 4px 4px 9px;
-    }
+    
 
     checkbox {
       display: inline-block;
       width: 5rem;
     }
   }
+
+  &__label,
+  &__input {
+    @include respond(phone-land) {
+      margin: auto;
+    }
+  }
+
+  &__label {
+    display: inline-block;
+    width: 12rem;
+
+    @include respond(phone-land) {
+      text-align: center;
+    }
+  }
+
+  &__input {
+    color: $color-grey-3;
+    background-color: $color-yellow-2;
+    box-shadow: $color-grey-4 4px 4px 9px;
+  }
+
 }
 
 .btn {

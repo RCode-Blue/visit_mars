@@ -25,6 +25,10 @@
     width: $inner-width-tab-port;
   }
 
+  @include respond(phone-land) {
+    width: $inner-width-phone-land;
+  }
+
   @include respond(phone) {
     width: $inner-width-phone;
   }
@@ -80,6 +84,10 @@
       width: $inner-width-tab-land;
   }
 
+  @include respond(phone-land) {
+    width: $inner-width-phone-land;
+  }
+
   @include respond(phone) {
     width: $inner-width-phone;
   }
@@ -99,8 +107,9 @@
   flex-wrap: wrap;
 
   @include respond(tab-port) {
-    padding: 1rem 0;
+    padding: 1rem 0 2rem 0;
     flex-direction: column;
+    height: auto;
   }
 
   &__txt {
@@ -111,6 +120,17 @@
 
     @include respond(tab-port) {
       width: 100%;
+      padding-bottom: 2.5rem;
+    }
+
+    @include respond(phone-land) {
+      min-width: 30rem;
+      padding: 3rem;
+    }
+
+    @include respond(phone) {
+      min-width: 29rem;
+      padding: .5rem;
     }
 
     &__title {

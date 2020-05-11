@@ -6,6 +6,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
   <script src="https://use.fontawesome.com/5d403664fb.js"></script>
+  <script src="https://kit.fontawesome.com/e5845ce80e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
   <title>Mars Tourism</title>
 </head>
@@ -13,7 +14,12 @@
   
   <nav class="navi" id="top">
     <img src="./img/logo/logo-white-l.png" class="navi__logo-lg"></img>
-    <ul class="navi__menu">
+      
+    
+    
+
+  <ul class="navi__menu">
+  <!-- <ul class="navi__menu mobile-navi__menu js-navi__menu"> -->
       <li><a href="#works" class="nav-item">
         How it Works
       </a></li>
@@ -27,6 +33,11 @@
         Contact Us
       </a></li>
     </ul>
+
+  <a class="mobile-navi-icon js-navi__icon fas fa-bars">
+  </a>
+
+
   </nav>
 
   <div class="container">
@@ -437,6 +448,36 @@
           <li class="footer__list__item"><a href="#visit" class="footer__link">Places to visit</a></li>
           <li class="footer__list__item"><a href="#contact" class="footer__link">Contact</a></li>
         </ul>
+        <ul class="footer__icon-list">
+          <li class="footer__icon-list__item">
+            <a href="#features" class="footer__icon-link">
+              <i class="far fa-thumbs-up" aria-hidden="true" title="What we offer"></i>
+            </a></li>
+          <li class="footer__icon-list__item">
+            <a href="#works" class="footer__icon-link">
+              <i class="fas fa-wrench" aria-hidden="true" title="How it works"></i>
+            </a></li>
+          <li class="footer__icon-list__item">
+            <a href="#launch" class="footer__icon-link">
+              <i class="fas fa-rocket" aria-hidden="true" title="Our launch sites"></i>
+            </a>
+          </li>
+          <li class="footer__icon-list__item">
+            <a href="#gallery" class="footer__icon-link">
+              <i class="fas fa-camera" aria-hidden="true" title="Gallery"></i>
+            </a>
+          </li>
+          <li class="footer__icon-list__item">
+            <a href="#visit" class="footer__icon-link">
+              <i class="fas fa-binoculars" aria-hidden="true" title="Places to visit"></i>
+            </a>
+          </li>
+          <li class="footer__icon-list__item">
+            <a href="#contact" class="footer__icon-link">
+              <i class="fas fa-envelope-open-text" aria-hidden="true"  title="Contact us"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     
@@ -453,4 +494,6 @@
   </footer>
   
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/default.js"></script>
 </html>

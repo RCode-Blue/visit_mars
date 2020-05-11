@@ -30,8 +30,10 @@
       font-size: 6rem;
     }
 
-    @include respond(phone) {
-      font-size: 4rem;
+    @include respond(phone-land) {
+      grid-column: 2/6;
+      font-size: 4.5rem;
+      // font-size: $font-paragraph-size;
     }
 
   }
@@ -46,7 +48,16 @@
       font-size: 2rem;
     }
 
+    @include respond(phone-land) {
+      grid-column: 2/7;
+      padding: auto 1rem;
+      font-size: 2rem;
+    }
+
     @include respond(phone) {
+      // grid-row: unset;
+      grid-column: 2/6;
+      padding: auto 1rem;
       font-size: 1.8rem;
     }
   }
@@ -61,7 +72,12 @@
       font-size: 1.6rem;
     }
 
+    @include respond(phone-land) {
+      font-size: 1.6rem;
+    }
+
     @include respond(phone) {
+      grid-column: 2/7;
       font-size: 1.4rem;
     }
 
