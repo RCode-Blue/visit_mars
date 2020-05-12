@@ -60,9 +60,8 @@
     }
 
     @include respond(phone) {
-      // grid-row: unset;
-      grid-column: 2/6;
-      padding: auto 1rem;
+      // grid-column: 2/6;
+      // padding: auto 1rem;
       font-size: 1.8rem;
     }
   }
@@ -80,16 +79,19 @@
     @include respond(phone-land) {
       grid-column: 2/8;
       font-size: 1.6rem;
-      padding-right: .8rem;
+      padding: auto 2rem;
     }
 
     @include respond(phone) {
-      // grid-column: 2/7;
+      grid-column: 1/8;
+      padding: 0 1rem;
       font-size: 1.4rem;
     }
 
     p {
       padding: 1rem 0;
+
+      
     }
   }
 }

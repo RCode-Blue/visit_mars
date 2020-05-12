@@ -154,8 +154,6 @@ body {
         font-size: 2rem; } }
     @media only screen and (max-width: 18.75em) {
       .banner__slogan {
-        grid-column: 2/6;
-        padding: auto 1rem;
         font-size: 1.8rem; } }
   .banner__blurb {
     grid-row: 4/5;
@@ -168,9 +166,11 @@ body {
       .banner__blurb {
         grid-column: 2/8;
         font-size: 1.6rem;
-        padding-right: .8rem; } }
+        padding: auto 2rem; } }
     @media only screen and (max-width: 18.75em) {
       .banner__blurb {
+        grid-column: 1/8;
+        padding: 0 1rem;
         font-size: 1.4rem; } }
     .banner__blurb p {
       padding: 1rem 0; }
