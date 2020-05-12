@@ -77,9 +77,9 @@
     }
 
     @include respond(phone-land) {
-      grid-column: 2/8;
+      grid-column: 2/7;
       font-size: 1.6rem;
-      padding: auto 2rem;
+      // padding: auto .8rem;
     }
 
     @include respond(phone) {
