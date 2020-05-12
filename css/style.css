@@ -108,6 +108,7 @@ body {
       grid-template-columns: [far-left] 1fr [inner-left] 60rem [inner-right] 1fr [far-right]; } }
   @media only screen and (max-width: 37.5em) {
     .container {
+      grid-template-rows: [grid-top banner-top] 100vh [banner-bottom feature-top] auto [feature-bottom works-title-top] auto [works-title-bottom works-top] auto [works-bottom launch-title-top] auto [launch-title-bottom launch-top] auto [launch-bottom gallery-top] auto [gallery-bottom visit-title-top] auto [visit-title-bottom visit-top] auto [visit-bottom contact-top] auto [contact-bottom footer-top] auto [footer-bottom grid-bottom];
       grid-template-columns: [far-left] 1fr [inner-left] 30rem [inner-right] 1fr [far-right]; } }
   @media only screen and (max-width: 18.75em) {
     .container {

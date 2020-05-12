@@ -43,6 +43,19 @@
     }
 
     @include respond(phone-land) {
+      grid-template-rows: [grid-top banner-top]
+      100vh [banner-bottom feature-top] 
+      auto [feature-bottom works-title-top] 
+      $section-title-height [works-title-bottom works-top]
+      auto [works-bottom launch-title-top]
+      auto [launch-title-bottom launch-top]
+      auto [launch-bottom gallery-top]
+      auto [gallery-bottom visit-title-top]
+      auto [visit-title-bottom visit-top]
+      auto [visit-bottom contact-top]
+      auto [contact-bottom footer-top]
+      auto [footer-bottom grid-bottom];
+
       grid-template-columns: [far-left] 1fr [inner-left] 
         $inner-width-phone-land [inner-right] 
         1fr [far-right];
