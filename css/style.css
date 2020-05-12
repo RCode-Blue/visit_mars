@@ -125,6 +125,9 @@ body {
   background-position: center;
   background-attachment: fixed;
   color: #F0E7E7; }
+  @media only screen and (max-width: 37.5em) {
+    .banner {
+      grid-template-rows: 6rem repeat(5, 1fr); } }
   .banner__title {
     grid-row: 2/3;
     grid-column: 2/-1;
@@ -162,10 +165,11 @@ body {
         font-size: 1.6rem; } }
     @media only screen and (max-width: 37.5em) {
       .banner__blurb {
-        font-size: 1.6rem; } }
+        grid-column: 2/8;
+        font-size: 1.6rem;
+        padding-right: .8rem; } }
     @media only screen and (max-width: 18.75em) {
       .banner__blurb {
-        grid-column: 2/7;
         font-size: 1.4rem; } }
     .banner__blurb p {
       padding: 1rem 0; }

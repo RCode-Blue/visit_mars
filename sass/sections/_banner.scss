@@ -20,6 +20,10 @@
     
   color: $color-yellow-3;
 
+  @include respond(phone-land) {
+    grid-template-rows: 6.0rem repeat(5, 1fr);
+  }
+
   &__title {
     grid-row: 2/3;
     grid-column: 2/-1;    
@@ -49,6 +53,7 @@
     }
 
     @include respond(phone-land) {
+
       grid-column: 2/7;
       padding: auto 1rem;
       font-size: 2rem;
@@ -73,11 +78,13 @@
     }
 
     @include respond(phone-land) {
+      grid-column: 2/8;
       font-size: 1.6rem;
+      padding-right: .8rem;
     }
 
     @include respond(phone) {
-      grid-column: 2/7;
+      // grid-column: 2/7;
       font-size: 1.4rem;
     }
 
