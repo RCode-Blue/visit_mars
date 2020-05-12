@@ -3,9 +3,6 @@
   width: 100%;
   height: $navbar-height-lg;
 
-  // float: top;
-
-  // background-color: $color-grey-3;
   background-image: linear-gradient(
     to bottom,
     rgba($color-black, 1) 0%,
@@ -31,27 +28,26 @@
       height: $navbar-height-sm;
     }
   }
-  
-  &__logo-lg {
+
+  &__top {
     flex: 0 0 $navbar-height-lg;
     justify-self: center;
 
     width: $navbar-height-lg;
     height: $navbar-height-lg;
-    padding: 1rem 2rem;
 
     @include respond(phone-land) {
       flex: 0 0 $navbar-height-md;
       height: $navbar-height-md;
       width: $navbar-height-md;
     }
-
-    @include respond(phone) {
-      flex: 0 0 $navbar-height-sm;
-      height: $navbar-height-sm;
-      width: $navbar-height-sm;
-    }
+  }
+  
+  &__logo-lg {
+    width: 100%;
+    height: 100%;
     
+    padding: 1rem;
   }
 
   &__menu {

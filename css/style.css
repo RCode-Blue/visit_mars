@@ -200,7 +200,7 @@ body {
     font-weight: 300;
     font-size: 4rem;
     text-align: center;
-    padding: 5rem; }
+    padding: 8rem 5rem; }
   .cform__line {
     padding: .5rem;
     font-size: 1.8rem;
@@ -477,22 +477,20 @@ body {
   @media only screen and (max-width: 37.5em) and (max-width: 18.75em) {
     .navi {
       height: 6rem; } }
-  .navi__logo-lg {
+  .navi__top {
     flex: 0 0 10rem;
     justify-self: center;
     width: 10rem;
-    height: 10rem;
-    padding: 1rem 2rem; }
+    height: 10rem; }
     @media only screen and (max-width: 37.5em) {
-      .navi__logo-lg {
+      .navi__top {
         flex: 0 0 6.3rem;
         height: 6.3rem;
         width: 6.3rem; } }
-    @media only screen and (max-width: 18.75em) {
-      .navi__logo-lg {
-        flex: 0 0 6rem;
-        height: 6rem;
-        width: 6rem; } }
+  .navi__logo-lg {
+    width: 100%;
+    height: 100%;
+    padding: 1rem; }
   .navi__menu {
     flex: 1;
     display: flex;
