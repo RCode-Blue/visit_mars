@@ -1,10 +1,10 @@
-<h1>Visit Mars</h1>
+# Visit Mars
 A demo webpage that imagines a website promoting tourism in Mars.
 
-<h2>About</h2>
+## About
 A single page website featuring a ficticious government agency. It details an outline of the steps required for a Mars visit, some of the available facilities and possiblt sites of interest.
 
-<h2>Technicals</h2>
+## Technicals
 This site is built with just HTML and CSS. SASS was used as a preprocessor.
 
 Other tools used are:
@@ -14,7 +14,7 @@ Other tools used are:
 - CSS Grid
 - javaScript
 
-<h2>Acknowledgements</h2>
+## Acknowledgements
 
 - Mars images and location descriptions from NASA
 - Contact background image courtesy Sam Wermut on [Unsplash](https://unsplash.com/photos/FiUuNWxnb3k)
