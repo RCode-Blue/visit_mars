@@ -1,8 +1,15 @@
 # Visit Mars
 A demo webpage that imagines a website promoting tourism in Mars.
 
-## About
+## Project Description
 A single page website featuring a ficticious government agency. It details an outline of the steps required for a Mars visit, some of the available facilities and possiblt sites of interest.
+
+## Development Tools
+### Development server
+run `npm run dev`
+- Compiles the SASS file to output CSS folder
+- Website runs in `http://127.0.0.1:8080/` 
+
 
 ## Technicals
 This site is built with just HTML and CSS. SASS was used as a preprocessor.
@@ -13,6 +20,8 @@ Other tools used are:
 - Flexbox
 - CSS Grid
 - javaScript
+
+
 
 ## Acknowledgements
 
