@@ -121,7 +121,7 @@ body {
   grid-template-rows: repeat(6, 1fr);
   grid-template-columns: repeat(7, 1fr);
   height: 100%;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 60%, black 100%), url(../img/hero/Mars.jpg);
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 60%, black 100%), url(../assets/hero/Mars.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -178,7 +178,7 @@ body {
   grid-row: contact-top / contact-bottom;
   grid-column: far-left / far-right;
   padding: 20rem 0;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%), url("../img/Form_Mars.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.4) 100%), url("../assets/Form_Mars.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
