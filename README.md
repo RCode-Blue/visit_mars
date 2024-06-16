@@ -15,11 +15,11 @@ To compile the SASS files to CSS, run `npm run compile:sass`
 This site is built with just HTML and CSS. SASS was used as a preprocessor.
 
 Other tools used are:
-- Media queries
-- Mixins
-- Flexbox
-- CSS Grid
-- javaScript
+- Media queries.
+- Mixins.
+- Flexbox.
+- CSS Grid.
+- javaScript.
 
 
 
