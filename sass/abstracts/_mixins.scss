@@ -1,6 +1,5 @@
-
-// #region GENERAL MIXINS
-// ----------------------
+// General mixins
+// --------------
 // Centre-aligns a wrapper div
 @mixin inner-div-txt {
   width: $inner-width;
@@ -46,17 +45,13 @@
   padding-top: $section-padding-top;
   padding-bottom: $section-padding-bottom;
 }
-// #endregion
 
 
-// #region FOUR-BOXES MIXINS:
-// -------------------------
-// Section layout
+// Four boxes
 @mixin four-boxes-section {
   grid-column: far-left / far-right;
 
   display: grid;
-  // grid-template-columns: 1fr minmax(30rem, 70vw) 1fr;
 }
 
 // Outer wrap layout
@@ -76,12 +71,12 @@
     width: $inner-width-desktop;
   }
 
-    @include respond(laptop) {
+  @include respond(laptop) {
     width: $inner-width-laptop;
   }
 
-    @include respond(tab-land) {
-      width: $inner-width-tab-land;
+  @include respond(tab-land) {
+    width: $inner-width-tab-land;
   }
 
   @include respond(phone-land) {
@@ -93,11 +88,9 @@
   }
 
 }
-// #endregion
 
 
-// TEXT-IMAGE BOX MIXIN:
-// --------------------
+// Text image box
 @mixin txt-img-box {
   width: 100%;
   padding: 0 2rem;
@@ -175,4 +168,3 @@
     }
   }
 }
-

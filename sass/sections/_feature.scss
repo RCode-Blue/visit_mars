@@ -1,8 +1,6 @@
 .feature {
   @include four-boxes-section;
-
   @include four-boxes-wrap;
-  // @include section-padding;
 
   grid-row: feature-top / feature-bottom;
 
@@ -11,4 +9,3 @@
 .feat-card {
   height: 40rem;
 }
-

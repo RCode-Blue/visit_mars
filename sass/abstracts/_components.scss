@@ -20,7 +20,7 @@
 
   &__feat-top {
     flex-grow: .8;
-    
+
     border: 1px solid $color-grey-2;
     border-radius: 5px 5px 0 0;
     background-color: $color-white;
@@ -46,7 +46,7 @@
 
       margin-top: 1rem;
       margin-bottom: 1rem;
-      
+
     }
 
     &__text {
@@ -59,21 +59,21 @@
 // Launch Cards
 .launch-card {
   color: $color-grey-3;
-  transition: all .2s;
   height: 45rem;
 
   &:hover &__front {
-      display: none;
-    }
+    display: none;
+  }
 
   &:hover &__back {
-      display: block;
-    }
+    display: block;
+  }
 
 
   &__front {
     display: block;
     border: 1px solid $color-grey-2;
+
     div {
       height: 6rem;
       background-color: $color-grey-2;
@@ -82,6 +82,7 @@
       text-align: center;
 
     }
+
     img {
       width: 100%;
       height: 39rem;
@@ -103,11 +104,8 @@
 
     p {
       &:not(:last-child) {
-        padding-bottom: 2rem;;
+        padding-bottom: 2rem;
       }
     }
   }
 }
-
-
-
